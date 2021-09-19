@@ -44,6 +44,6 @@ The following stuff happens internally and is abstracted from the user.
 * Loader extracts and stores all the functions and parameters.
 * Loader also tries to execute a simple addition method by dynamically passing arguments through C++ to LLVM IR. This is an additional important functionality.
 
-This intermediate reprsentation is converted to Meta Object Protocol and can hence be used to generate similiar logic in other programming languages. This enable polyglot programming.
+This intermediate reprsentation is converted to Meta Object Protocol and can hence be used to generate similiar logic in other programming languages. This enables polyglot programming.
 
 <b> <p align = "center"> Created by Yash Dekate. </p> </b>
