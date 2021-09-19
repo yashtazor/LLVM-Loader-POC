@@ -22,16 +22,16 @@ These methods have specific functionalities and they're mapped as follows
 
 ## What is this POC about?
 Through this POC, I want to create a simple LLVM loader which would essentially take a C file as input, convert it to LLVM IR (Intermediate Representation) and then write a loader to extract all the important stuff from this LLVM IR file. This extracted stuff would be reflected and converted into Meta Object Protocol for further use.
-This POC as of now addresses only the initilize(), load(), and discover() methods.
+This POC as of now addresses only the initialize(), load(), and discover() methods.
 
 ## How to run?
 
-Install the required dependancies
+Install the required dependencies
 
 * LLVM v11 (Be sure to install v11 only!)
 * clang 
 
-After installing the above dependancies
+After installing the above dependencies
 
 * Clone this repository and navigate to the project directory.
 * Build and run the project using **``make input.ll && make && ./main``** command.
@@ -44,6 +44,6 @@ The following stuff happens internally and is abstracted from the user.
 * Loader extracts and stores all the functions and parameters.
 * Loader also tries to execute a simple addition method by dynamically passing arguments through C++ to LLVM IR. This is an additional important functionality.
 
-This intermediate reprsentation is converted to Meta Object Protocol and can hence be used to generate similiar logic in other programming languages. This enables polyglot programming.
+This intermediate representation is converted to Meta Object Protocol and can hence be used to generate similar logic in other programming languages. This enables polyglot programming.
 
 <b> <p align = "center"> Created by Yash Dekate. </p> </b>
